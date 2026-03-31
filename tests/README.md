@@ -1,3 +1,3 @@
 # Testes
 
-Pasta reservada para a estrutura de testes do sistema.
+Pasta reservada para a estrutura de testes do sistema
