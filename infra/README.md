@@ -1,3 +1,3 @@
 # Infra
 
-Pasta reservada para arquivos de organização do ambiente e configuração do projeto.
+Pasta reservada para arquivos de organização e configuração do projeto.
