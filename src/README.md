@@ -1,3 +1,3 @@
 # Código-fonte
 
-Reservada para o código do sistema.
+Reservada para o código do sistema
