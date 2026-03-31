@@ -19,8 +19,5 @@ O projeto está organizado assim:
 - tests: testes do sistema
 - infra: arquivos de configuração
 
-## Observação
-Nesse momento o foco é só na organização do projeto, não tem código implementado ainda.
-
 ## Autor
 Rhwan Torres
