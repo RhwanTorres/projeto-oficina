@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <img src="assets/logo.png" class="logo">
+
+    <h2>Painel Principal</h2>
+
+<div class="menu-config">
+
+  <button onclick="toggleMenu()">⚙️</button>
+
+  <div id="dropdown" class="dropdown">
+    <p onclick="irPerfil()">Perfil</p>
+    <p onclick="sair()">Sair</p>
+  </div>
+
+</div>
+
+    <div class="card">
+      <h3>CLIENTE</h3>
+      <p>Cadastrar e consultar clientes da oficina.</p>
+      <button onclick="irClientes()">Acessar</button>
+    </div>
+
+    <div class="card">
+      <h3>ORDENS DE SERVIÇO</h3>
+      <p>Cadastrar e acompanhar serviços dos veículos.</p>
+      <button onclick="irOrdens()">Acessar</button>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

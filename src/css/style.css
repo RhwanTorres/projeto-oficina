@@ -1,39 +1,107 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background-color: #bfc0cc;
 }
 
 .container {
-  max-width: 350px;
-  margin: 80px auto;
+  width: 900px;
+  min-height: 500px;
+  margin: 50px auto;
+  background-color: #d6d6df;
+  border-radius: 18px;
+  padding: 35px;
   text-align: center;
 }
 
 .logo {
-  width: 200px;
+  width: 220px;
   margin-bottom: 20px;
 }
 
-input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
+input, select {
+  width: 55%;
+  padding: 13px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 12px;
   border: none;
+  font-size: 15px;
 }
 
 button {
   background: black;
   color: white;
-  padding: 12px;
+  padding: 12px 28px;
   border: none;
-  border-radius: 20px;
-  width: 120px;
+  border-radius: 22px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .link {
-  color: blue;
+  color: #1d4ed8;
   cursor: pointer;
+}
+
+.card {
+  background-color: white;
+  width: 65%;
+  margin: 18px auto;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.botao-secundario {
+  background-color: #555;
+  margin-top: 15px;
+}
+
+.menu-config {
+  position: absolute;
+  top: 30px;   /* controla altura */
+  right: 40px; /* controla posição lateral */
+}
+
+.menu-config button {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.dropdown p {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  color: #2563eb;
+}
+
+.container {
+  position: relative;
 }
