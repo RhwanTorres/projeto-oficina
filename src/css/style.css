@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #bfc0cc;
+}
+
+.container {
+  max-width: 350px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+}
