@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Clientes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container clientes-menu-container">
+
+    <div class="top-actions">
+      <button class="btn-voltar" onclick="irDashboard()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+
+      <h2>Clientes</h2>
+    </div>
+
+    <header class="clientes-header">
+      <img src="assets/logo.png" class="logo">
+      <p>Gerencie os clientes da oficina</p>
+    </header>
+
+    <section class="clientes-menu-cards">
+
+      <div class="menu-card">
+        <span class="material-icons card-icon">person_add</span>
+        <h3>Cadastrar Cliente</h3>
+        <p>Adicionar novos clientes ao sistema</p>
+        <button onclick="irCadastroCliente()">Acessar</button>
+      </div>
+
+      <div class="menu-card">
+        <span class="material-icons card-icon">groups</span>
+        <h3>Clientes Cadastrados</h3>
+        <p>Visualizar clientes já cadastrados</p>
+        <button onclick="irListaClientes()">Acessar</button>
+      </div>
+
+      <div class="menu-card">
+        <span class="material-icons card-icon">event</span>
+        <h3>Agendamento</h3>
+        <p>Agendar atendimentos</p>
+        <button onclick="irAgendamento()">Acessar</button>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

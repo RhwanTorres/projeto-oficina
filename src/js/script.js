@@ -36,3 +36,44 @@ function toggleMenu() {
 function irPerfil() {
   window.location.href = "perfil.html";
 }
+
+function cadastrarCliente() {
+  const nome = document.getElementById("nomeCliente").value;
+  const placa = document.getElementById("placaCliente").value;
+  const modelo = document.getElementById("modeloCliente").value;
+  const telefone = document.getElementById("telefoneCliente").value;
+
+  if (nome === "" || placa === "" || modelo === "" || telefone === "") {
+    alert("Preencha todos os campos!");
+    return;
+  }
+
+  alert("Cliente cadastrado com sucesso!");
+  window.location.href = "ordem.html";
+}
+
+function irCadastroCliente() {
+  window.location.href = "cadastro-cliente.html";
+}
+
+function irListaClientes() {
+  window.location.href = "clientes-lista.html";
+}
+
+function irAgendamento() {
+  window.location.href = "agendamento.html";
+}
+
+function cadastrarCliente() {
+  const nome = document.getElementById("nomeCliente").value;
+  const placa = document.getElementById("placaCliente").value;
+  const modelo = document.getElementById("modeloCliente").value;
+  const telefone = document.getElementById("telefoneCliente").value;
+
+  if (nome === "" || placa === "" || modelo === "" || telefone === "") {
+    alert("Preencha todos os campos!");
+    return;
+  }
+
+  alert("Cliente cadastrado com sucesso!");
+}

@@ -1,12 +1,60 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Perfil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
 
-  <h2>Perfil</h2>
+  <div class="container perfil-container">
 
-  <p>Nome: Usuário</p>
-  <p>Email: usuario@email.com</p>
+    <header class="perfil-header">
+      <img src="assets/logo.png" class="logo">
+      <h1>Perfil do Usuário</h1>
+      <p>Informações da conta conectada ao sistema.</p>
+    </header>
 
-  <button onclick="irDashboard()">Voltar</button>
+    <section class="perfil-card">
 
-</div>
+      <div class="perfil-avatar">
+        <span class="material-icons">person</span>
+      </div>
 
-<script src="js/script.js"></script>
+      <div class="perfil-info">
+        <h2>Rhwan Torres</h2>
+        <p>Administrador da Oficina</p>
+      </div>
+
+      <div class="perfil-dados">
+        <div>
+          <strong>Nome</strong>
+          <span>Rhwan Torres</span>
+        </div>
+
+        <div>
+          <strong>Email</strong>
+          <span>rhwan@email.com</span>
+        </div>
+
+        <div>
+          <strong>Perfil</strong>
+          <span>Administrador</span>
+        </div>
+
+        <div>
+          <strong>Status</strong>
+          <span class="status-ativo">Ativo</span>
+        </div>
+      </div>
+
+      <button onclick="irDashboard()">Voltar ao painel</button>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

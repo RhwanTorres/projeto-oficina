@@ -3,23 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Mecânica Rápida - Login</title>
-
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
+  <div class="login-page">
 
-    <img src="assets/logo.png" class="logo">
+    <div class="login-card">
 
-    <h2>Login</h2>
+      <img src="assets/logo.png" class="login-logo">
 
-    <input type="text" placeholder="Matrícula">
-    <input type="password" placeholder="Senha">
+      <h1>Bem-vindo</h1>
+      <p>Acesse o sistema da Mecânica Rápida</p>
 
-    <p class="link" onclick="irRecuperacao()">Esqueci minha senha</p>
+      <div class="input-group">
+        <span class="material-icons">badge</span>
+        <input type="text" id="matricula" placeholder="Matrícula">
+      </div>
 
-    <button onclick="login()">Entrar</button>
+      <div class="input-group">
+        <span class="material-icons">lock</span>
+        <input type="password" id="senha" placeholder="Senha">
+      </div>
+
+      <p class="link" onclick="irRecuperacao()">Esqueci minha senha</p>
+
+      <button class="login-button" onclick="login()">Entrar</button>
+
+    </div>
 
   </div>
 

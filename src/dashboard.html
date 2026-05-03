@@ -4,37 +4,58 @@
   <meta charset="UTF-8">
   <title>Mecânica Rápida - Dashboard</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
+  <div class="container dashboard-container">
 
-    <img src="assets/logo.png" class="logo">
+    <div class="menu-config">
+      <button onclick="toggleMenu()" class="btn-config">
+        <span class="material-icons">settings</span>
+      </button>
 
-    <h2>Painel Principal</h2>
+      <div id="dropdown" class="dropdown">
+        <div class="dropdown-header">
+          <strong>Configurações</strong>
+          <span>Minha conta</span>
+        </div>
 
-<div class="menu-config">
+        <div class="dropdown-item" onclick="irPerfil()">
+          <span class="material-icons">person</span>
+          <p>Perfil</p>
+        </div>
 
-  <button onclick="toggleMenu()">⚙️</button>
-
-  <div id="dropdown" class="dropdown">
-    <p onclick="irPerfil()">Perfil</p>
-    <p onclick="sair()">Sair</p>
-  </div>
-
-</div>
-
-    <div class="card">
-      <h3>CLIENTE</h3>
-      <p>Cadastrar e consultar clientes da oficina.</p>
-      <button onclick="irClientes()">Acessar</button>
+        <div class="dropdown-item sair" onclick="sair()">
+          <span class="material-icons">logout</span>
+          <p>Sair</p>
+        </div>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>ORDENS DE SERVIÇO</h3>
-      <p>Cadastrar e acompanhar serviços dos veículos.</p>
-      <button onclick="irOrdens()">Acessar</button>
-    </div>
+    <header class="dashboard-header">
+      <img src="assets/logo.png" class="logo">
+      <h1>Painel Principal</h1>
+      <p>Gerencie clientes, veículos e ordens de serviço da oficina.</p>
+    </header>
+
+    <section class="dashboard-cards">
+
+      <div class="dashboard-card">
+        <span class="material-icons card-icon">groups</span>
+        <h3>Clientes</h3>
+        <p>Cadastre e consulte os clientes da oficina.</p>
+        <button onclick="irClientes()">Acessar</button>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="material-icons card-icon">assignment</span>
+        <h3>Ordens de Serviço</h3>
+        <p>Cadastre e acompanhe os serviços dos veículos.</p>
+        <button onclick="irOrdens()">Acessar</button>
+      </div>
+
+    </section>
 
   </div>
 
