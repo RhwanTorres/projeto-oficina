@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordens de Serviço</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container lista-clientes-container">
+
+    <div class="top-actions">
+      <button class="btn-voltar" onclick="irOrdens()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+
+      <h2>Ordens de Serviço</h2>
+    </div>
+
+    <header class="clientes-header">
+      <img src="assets/logo.png" class="logo">
+      <p>Visualize e acompanhe as ordens de serviço cadastradas.</p>
+    </header>
+
+    <section class="tabela-card">
+
+      <table class="tabela-clientes">
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Veículo</th>
+            <th>Serviço</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+<tr onclick="abrirDetalhesOrdem('001')">
+  <td>João Silva</td>
+  <td>Fiat Uno</td>
+  <td>Troca de óleo</td>
+  <td><span class="status-pendente">Pendente</span></td>
+</tr>
+
+<tr onclick="abrirDetalhesOrdem('002')">
+  <td>Maria Souza</td>
+  <td>Honda Civic</td>
+  <td>Revisão geral</td>
+  <td><span class="status-ativo">Em andamento</span></td>
+</tr>
+
+<tr onclick="abrirDetalhesOrdem('003')">
+  <td>Carlos Lima</td>
+  <td>Gol</td>
+  <td>Freios</td>
+  <td><span class="status-concluido">Concluído</span></td>
+</tr>
+
+        </tbody>
+      </table>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

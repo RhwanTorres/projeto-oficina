@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Cadastro de Ordem</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container cadastro-container">
+
+    <div class="top-actions">
+      <button class="btn-voltar" onclick="irOrdens()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+
+      <h2>Cadastro de Ordem</h2>
+    </div>
+
+    <header class="clientes-header">
+      <img src="assets/logo.png" class="logo">
+      <p>Registre uma nova ordem de serviço para o veículo.</p>
+    </header>
+
+    <section class="form-card">
+
+      <div class="form-grid">
+
+        <div class="input-group">
+          <span class="material-icons">person</span>
+          <input type="text" id="clienteOrdem" placeholder="Nome do cliente">
+        </div>
+
+        <div class="input-group">
+          <span class="material-icons">directions_car</span>
+          <input type="text" id="veiculoOrdem" placeholder="Veículo">
+        </div>
+
+        <div class="input-group">
+          <span class="material-icons">build</span>
+          <input type="text" id="servicoOrdem" placeholder="Tipo de serviço">
+        </div>
+
+        <div class="input-group">
+          <span class="material-icons">assignment</span>
+          <select id="statusOrdem">
+            <option value="">Status da ordem</option>
+            <option>Pendente</option>
+            <option>Em andamento</option>
+            <option>Concluído</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="input-group campo-servico">
+        <span class="material-icons">description</span>
+        <input type="text" id="descricaoOrdem" placeholder="Descrição do problema">
+      </div>
+
+      <button class="btn-principal" onclick="cadastrarOrdem()">
+        Cadastrar Ordem
+      </button>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

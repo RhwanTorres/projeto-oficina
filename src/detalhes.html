@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Detalhes da Ordem</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container detalhes-container">
+
+    <div class="menu-config">
+      <button onclick="toggleMenu()" class="btn-config">
+        <span class="material-icons">settings</span>
+      </button>
+
+      <div id="dropdown" class="dropdown">
+        <div class="dropdown-header">
+          <strong>Configurações</strong>
+          <span>Minha conta</span>
+        </div>
+
+        <div class="dropdown-item" onclick="irPerfil()">
+          <span class="material-icons">person</span>
+          <p>Perfil</p>
+        </div>
+
+        <div class="dropdown-item sair" onclick="sair()">
+          <span class="material-icons">logout</span>
+          <p>Sair</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button class="btn-voltar" onclick="irOrdens()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+
+      <h2>Detalhes da Ordem</h2>
+    </div>
+
+    <header class="clientes-header">
+      <img src="assets/logo.png" class="logo">
+      <p>Informações completas da ordem de serviço.</p>
+    </header>
+
+    <section class="detalhes-card detalhes-profissional">
+
+      <div class="detalhes-titulo">
+        <div>
+          <h3>FIAT UNO 2010</h3>
+          <p>Ordem de Serviço #001</p>
+        </div>
+
+        <span class="status-ativo">Em andamento</span>
+      </div>
+
+      <img src="assets/fiat-uno.png" class="foto-veiculo" alt="Foto do veículo">
+
+      <div class="detalhes-grid-info">
+        <div>
+          <strong>Veículo</strong>
+          <span>Fiat Uno</span>
+        </div>
+
+        <div>
+          <strong>Ano</strong>
+          <span>2010</span>
+        </div>
+
+        <div>
+          <strong>Placa</strong>
+          <span>UHL-7303</span>
+        </div>
+
+        <div>
+          <strong>Cor</strong>
+          <span>Vermelho</span>
+        </div>
+      </div>
+
+      <div class="servicos-card">
+        <h3>Serviços Realizados</h3>
+
+        <ul>
+          <li>Ajustes do freio</li>
+          <li>Troca de óleo</li>
+          <li>Revisão de câmbio</li>
+        </ul>
+      </div>
+
+      <button class="btn-principal" onclick="irListaOrdens()">Voltar para lista</button>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

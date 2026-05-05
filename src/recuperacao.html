@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Recuperação de Senha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="login-page">
+
+    <div class="login-card recuperacao-card">
+
+      <img src="assets/logo.png" class="login-logo">
+
+      <h1>Recuperar Senha</h1>
+      <p>Digite seu e-mail para receber as instruções de recuperação.</p>
+
+      <div class="input-group">
+        <span class="material-icons">email</span>
+        <input type="email" id="emailRecuperacao" placeholder="Digite seu e-mail">
+      </div>
+
+      <button class="login-button" onclick="recuperarSenha()">Enviar</button>
+
+      <p class="link" onclick="voltarLogin()">Voltar para o login</p>
+
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

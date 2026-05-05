@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Ordens de Serviço</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container clientes-menu-container">
+
+    <div class="menu-config">
+      <button onclick="toggleMenu()" class="btn-config">
+        <span class="material-icons">settings</span>
+      </button>
+
+      <div id="dropdown" class="dropdown">
+        <div class="dropdown-header">
+          <strong>Configurações</strong>
+          <span>Minha conta</span>
+        </div>
+
+        <div class="dropdown-item" onclick="irPerfil()">
+          <span class="material-icons">person</span>
+          <p>Perfil</p>
+        </div>
+
+        <div class="dropdown-item sair" onclick="sair()">
+          <span class="material-icons">logout</span>
+          <p>Sair</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button class="btn-voltar" onclick="irDashboard()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+
+      <h2>Ordens de Serviço</h2>
+    </div>
+
+    <header class="clientes-header">
+      <img src="assets/logo.png" class="logo">
+      <p>Gerencie os serviços realizados nos veículos.</p>
+    </header>
+
+    <section class="clientes-menu-cards">
+
+      <div class="menu-card">
+        <span class="material-icons card-icon">note_add</span>
+        <h3>Cadastrar Ordem</h3>
+        <p>Registrar uma nova ordem de serviço.</p>
+        <button onclick="irCadastroOrdem()">Acessar</button>
+      </div>
+
+      <div class="menu-card">
+        <span class="material-icons card-icon">list_alt</span>
+        <h3>Ordens Cadastradas</h3>
+        <p>Visualizar ordens abertas e concluídas.</p>
+        <button onclick="irListaOrdens()">Acessar</button>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mecânica Rápida - Agendamento</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container agendamento-container">
+
+    <div class="top-actions">
+      <button class="btn-voltar" onclick="irClientes()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+
+      <h2>Agendamento</h2>
+    </div>
+
+    <header class="clientes-header">
+      <img src="assets/logo.png" class="logo">
+      <p>Agende atendimentos e serviços para os clientes.</p>
+    </header>
+
+    <section class="form-card">
+
+      <div class="form-grid">
+
+        <div class="input-group">
+          <span class="material-icons">person</span>
+          <input type="text" id="clienteAgendamento" placeholder="Nome do cliente">
+        </div>
+
+        <div class="input-group">
+          <span class="material-icons">directions_car</span>
+          <input type="text" id="veiculoAgendamento" placeholder="Veículo">
+        </div>
+
+        <div class="input-group">
+          <span class="material-icons">event</span>
+          <input type="date" id="dataAgendamento">
+        </div>
+
+        <div class="input-group">
+          <span class="material-icons">schedule</span>
+          <input type="time" id="horaAgendamento">
+        </div>
+
+      </div>
+
+      <div class="input-group campo-servico">
+        <span class="material-icons">build</span>
+        <input type="text" id="servicoAgendamento" placeholder="Serviço desejado">
+      </div>
+
+      <button class="btn-principal" onclick="cadastrarAgendamento()">
+        Agendar Serviço
+      </button>
+
+    </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
