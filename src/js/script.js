@@ -1,5 +1,13 @@
 function login() {
-  alert("Login realizado!");
+  const matricula = document.getElementById("matricula").value.trim();
+  const senha = document.getElementById("senha").value.trim();
+
+  if (matricula === "" || senha === "") {
+    alert("Preencha matrícula e senha para entrar!");
+    return;
+  }
+
+  alert("Login realizado com sucesso!");
   window.location.href = "dashboard.html";
 }
 
