@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Clientes</title>
+  <title>Mecânica Rápida - Clientes</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -20,30 +20,27 @@
 
     <header class="clientes-header">
       <img src="assets/logo.png" class="logo">
-      <p>Gerencie os clientes da oficina</p>
+      <p>Gerencie os clientes cadastrados e os veículos atendidos pela oficina.</p>
     </header>
 
-    <section class="clientes-menu-cards">
+    <section class="clientes-opcoes">
 
-      <div class="menu-card">
-        <span class="material-icons card-icon">person_add</span>
+      <div class="cliente-opcao-card">
+        <span class="material-icons cliente-opcao-icon">person_add</span>
+
         <h3>Cadastrar Cliente</h3>
-        <p>Adicionar novos clientes ao sistema</p>
-        <button onclick="irCadastroCliente()">Acessar</button>
+        <p>Adicione novos clientes com nome, placa, modelo do veículo e telefone.</p>
+
+        <button onclick="irCadastroCliente()">Acessar cadastro</button>
       </div>
 
-      <div class="menu-card">
-        <span class="material-icons card-icon">groups</span>
+      <div class="cliente-opcao-card">
+        <span class="material-icons cliente-opcao-icon">groups</span>
+
         <h3>Clientes Cadastrados</h3>
-        <p>Visualizar clientes já cadastrados</p>
-        <button onclick="irListaClientes()">Acessar</button>
-      </div>
+        <p>Visualize os clientes registrados no sistema e consulte os dados dos veículos.</p>
 
-      <div class="menu-card">
-        <span class="material-icons card-icon">event</span>
-        <h3>Agendamento</h3>
-        <p>Agendar atendimentos</p>
-        <button onclick="irAgendamento()">Acessar</button>
+        <button onclick="irListaClientes()">Ver clientes</button>
       </div>
 
     </section>
